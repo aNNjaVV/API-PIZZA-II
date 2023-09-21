@@ -31,7 +31,7 @@ public class ClienteController {
 	
 	
 
-	@GetMapping("/{íd}")
+	@GetMapping("/{id}")
 	public Cliente listarPorId(@PathVariable("id")long id){
 		Cliente c = service.listarPorId(id);
 		return c;
